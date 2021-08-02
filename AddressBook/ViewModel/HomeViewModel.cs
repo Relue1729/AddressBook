@@ -2,7 +2,6 @@
 using AddressBook.Common.Interfaces;
 using AddressBook.DataObjects;
 using AddressBook.Model;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 using System.Linq;
@@ -14,6 +13,7 @@ namespace AddressBook.ViewModel
 {
     class HomeViewModel : ViewModelBase
     {
+        #region Fields & Properties
         public override IModel Model { get; } = new HomeModel();
         public ObservableCollection<Contact> Contacts { get; set; }
 
@@ -57,7 +57,7 @@ namespace AddressBook.ViewModel
         }
         public string PopupAddRowPhoneNumber { get; set; } = string.Empty;
         public string PopupAddRowName        { get; set; } = string.Empty;
-
+        #endregion
         public HomeViewModel()
         {
             FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty = false;

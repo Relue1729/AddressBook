@@ -2,7 +2,6 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:AddressBook"
-             xmlns:common="clr-namespace:AddressBook.Common"
              xmlns:viewModel="clr-namespace:AddressBook.ViewModel"
              xmlns:view="clr-namespace:AddressBook.View"
              StartupUri="MainWindow.xaml">
@@ -28,8 +27,6 @@
 
                 <ResourceDictionary Source="Styles/PopupTextboxStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-
-            <common:AddRowValueConverter x:Key="AddRowValueConverter" />
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <view:HomeView/>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using AddressBook.Common;
 using System.Collections.ObjectModel;
 using AddressBook.DataObjects;
-using System;
 
 namespace AddressBook.Model
 {
@@ -23,7 +22,6 @@ namespace AddressBook.Model
 
         };
         public ObservableCollection<Contact> Contacts { get; set; } = new ObservableCollection<Contact>();
-
         public HomeModel()
         {
             try

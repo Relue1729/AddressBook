@@ -13,7 +13,6 @@ namespace AddressBook.Common
             add    { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
-
         public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
             this.execute = execute;
@@ -24,7 +23,6 @@ namespace AddressBook.Common
         {
             return canExecute == null || canExecute(parameter);
         }
-
         public void Execute(object parameter)
         {
             execute(parameter);
