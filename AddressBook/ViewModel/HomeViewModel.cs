@@ -7,7 +7,6 @@ using System.Windows.Controls;
 using System.Linq;
 using AddressBook.ValidationRules;
 using System.Globalization;
-using System.Windows;
 
 namespace AddressBook.ViewModel
 {
@@ -60,7 +59,6 @@ namespace AddressBook.ViewModel
         #endregion
         public HomeViewModel()
         {
-            FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty = false;
             Contacts = (Model as HomeModel).Contacts;
 
             DeleteRowCommand = new RelayCommand(x => DeleteRow((int)x));
