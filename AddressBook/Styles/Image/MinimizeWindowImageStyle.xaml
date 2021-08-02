@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="MinimizeWindowImageStyle" 
+           TargetType="{x:Type Image}" 
+           BasedOn   ="{StaticResource WindowControlImageBaseStyle}">
+        
+        <Setter Property="Image.Source" Value="/Assets/Images/WindowControlButtons/MinimizeWindowButton.png" />
+        <Style.Triggers>
+            <Trigger  Property="Image.IsMouseOver" Value="True">
+                <Setter Property="Image.Source" Value="/Assets/Images/WindowControlButtons/MinimizeWindowButtonActive.png" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+</ResourceDictionary>

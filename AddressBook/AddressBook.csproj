@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\Images\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Fonts\BebasNeue-Bold.ttf" />
+    <None Remove="Assets\Fonts\BebasNeue-Book.ttf" />
+    <None Remove="Assets\Fonts\BebasNeue-Light.ttf" />
+    <None Remove="Assets\Fonts\BebasNeue-Regular.ttf" />
+    <None Remove="Assets\Fonts\BebasNeue-Thin.ttf" />
+    <None Remove="Assets\Images\AddButton.png" />
+    <None Remove="Assets\Images\DeleteButton.png" />
+    <None Remove="Assets\Images\HomeViewBackgroundImage.png" />
+    <None Remove="Assets\Images\icon.ico" />
+    <None Remove="Assets\Images\WindowControlButtons\CloseWindowButton.png" />
+    <None Remove="Assets\Images\WindowControlButtons\CloseWindowButtonActive.png" />
+    <None Remove="Assets\Images\WindowControlButtons\MinimizeWindowButton.png" />
+    <None Remove="Assets\Images\WindowControlButtons\MinimizeWindowButtonActive.png" />
+    <None Remove="XmlData\Contacts.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="XmlData\Contacts.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\BebasNeue-Bold.ttf" />
+    <Resource Include="Assets\Fonts\BebasNeue-Book.ttf" />
+    <Resource Include="Assets\Fonts\BebasNeue-Light.ttf" />
+    <Resource Include="Assets\Fonts\BebasNeue-Regular.ttf" />
+    <Resource Include="Assets\Fonts\BebasNeue-Thin.ttf" />
+    <Resource Include="Assets\Images\HomeViewButtons\DeleteButton.png" />
+    <Resource Include="Assets\Images\HomeViewBackgroundImage.png" />
+    <Resource Include="Assets\Images\icon.ico" />
+    <Resource Include="Assets\Images\HomeViewButtons\AddButton.png" />
+    <Resource Include="Assets\Images\WindowControlButtons\CloseWindowButton.png" />
+    <Resource Include="Assets\Images\WindowControlButtons\CloseWindowButtonActive.png" />
+    <Resource Include="Assets\Images\WindowControlButtons\MinimizeWindowButton.png" />
+    <Resource Include="Assets\Images\WindowControlButtons\MinimizeWindowButtonActive.png" />
+  </ItemGroup>
+
+</Project>
