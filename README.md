@@ -3,7 +3,7 @@
 
 Видео-демонстрация:
 
-[<img src="http://img.youtube.com/vi/miyyIoixOwI/maxresdefault.jpg" width="75%">](https://youtu.be/miyyIoixOwI "AddressBook Sample Project")
+[<img src="https://raw.githubusercontent.com/Relue1729/AddressBook/main/Thumbnail.png" width="75%">](https://youtu.be/miyyIoixOwI "AddressBook Sample Project")
 
 Телефон можно добавить в любом формате, до тех пор пока он начинается с 7 или 8 и содержит в себе 11 цифр, он автоматически конвертируется в формат +7-xxx-xxx-xx-xx
 
