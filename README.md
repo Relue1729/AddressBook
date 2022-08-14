@@ -1,25 +1,24 @@
 # AddressBook
-Небольшое приложение что хранит в себе список контактов и их телефонов.
+Small application that stores a list of contacts and their phone numbers
 
-Видео-демонстрация:
+Video-demonstration:
 
 [<img src="https://raw.githubusercontent.com/Relue1729/AddressBook/main/Thumbnail.png" width="75%">](https://youtu.be/miyyIoixOwI "AddressBook Sample Project")
 
-Телефон можно добавить в любом формате, до тех пор пока он начинается с 7 или 8 и содержит в себе 11 цифр, он автоматически конвертируется в формат +7-xxx-xxx-xx-xx
+Phone number can be added in any format, as long as it starts with 7 or 8 and contains 11 digits, it's automatically converted to +7-xxx-xxx-xx-xx format.
 
-Данные берутся и сохраняются в XmlData/Contacts.xml. Если приложение не найдет этот файл будет создан файл с тестовыми данными. 
+The data is stored in XmlData/Contacts.xml. If this file is not present it would be created containing test data.
 
+Requirements Specification:
 
-Оригинальный текст задания: 
+You need to create an "Address book" application, which would have following features:
 
-Необходимо написать приложение "Адресная книга", которое обладает следующими функциями:
+- List of contacts, including ID, Name and Phone number
+- Ability to add a new contact
+- Ability to delete contacts
+- Ability to edit contacts
+- Data is stored in xml format
+- Data is validated (phone number should be in the +7-xxx-xxx-xx-xx format, name should be from 2 to 50 symbols long), field border should be highlited if the field has been filled incorrectly
+- Application needs to have a custom style, which is described in a separate xaml file
 
-- Список всех контактов (ID, ФИО, телефон)
-- Добавление контакта
-- Удаление контакта
-- Редактирование контакта
-- Данные хранятся в xml
-- есть валидация данных (телефон по маске +7-xxx-xxx-xx-xx, фамилия/имя от 2 до 50 символов), border полей подсвечивается красным у невалидных полей
-- приложение обладает кастомизированным стилем, который описан в отдельном файле xaml (изменить стиль по своему усмотрению)
-
-* ID - номер сотрудника по порядку, закрепленный за ним в момент добавления контакта.
+* ID - contact identification number assigned by the application at the time of its creation.
