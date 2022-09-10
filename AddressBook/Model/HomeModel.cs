@@ -10,15 +10,15 @@ namespace AddressBook.Model
     {
         public IDictionary<string, string> Labels => new Dictionary<string, string>()
         {
-            { "ID",                     "ID"},
-            { "Name",                   "Имя"},
-            { "Phone",                  "Телефон"},
+            { "ID", "ID"},
+            { "Name", "Имя"},
+            { "Phone", "Телефон"},
             { "SureYouWantToDeleteRow", "Вы уверены что хотите удалить эту запись?"},
-            { "AddRowTitle",            "Добавить запись"},
-            { "AddRow",                 "Добавить"},
-            { "Cancel",                 "Отмена"},
-            { "Yes",                    "Да"},
-            { "No",                     "Нет"}
+            { "AddRowTitle", "Добавить запись"},
+            { "AddRow", "Добавить"},
+            { "Cancel", "Отмена"},
+            { "Yes", "Да"},
+            { "No", "Нет"}
 
         };
         public ObservableCollection<Contact> Contacts { get; set; } = new ObservableCollection<Contact>();
